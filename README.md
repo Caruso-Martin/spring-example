@@ -29,3 +29,21 @@ Los esquemas en SQL  se utilizan para organizar o agrupar los conjuntos de objet
 * `update`: actualiza el "schema".
 * `create`: crea el "schema", destruyendo los datos pre-existentes.
 * `create-drop`: destruye el "schema" cuando la aplicacion se cierra.
+
+### URL para realizar pruebas
+Ingresamos en **POSTMAN**: `http://localhost:8080/api/student`
+* **GET**: no hace falta agragar nada mas.
+* **UPDATE**: agregar en el path el atributo a modificar (Ejemplo: `http://localhost:8080/api/student/1?name=Juan`) **Solo se puede modificar este atributo**
+* **DELETE**: agregar en el path el ID del estudiante a eliminar (Ejemplo: `http://localhost:8080/api/student/1`)
+* * **POST**: ingresar informacion de un estudiante en el `body`.
+
+#### JSON de estudiante
+```
+{
+    "name": "Carlos",
+    "email": "carlos@gmail.com",
+    "birthday": "2000-04-22",
+    "age": 21
+}
+```
+
