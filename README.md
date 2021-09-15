@@ -35,7 +35,7 @@ Ingresamos en **POSTMAN**: `http://localhost:8080/api/student`
 * **GET**: no hace falta agragar nada mas.
 * **UPDATE**: agregar en el path el atributo a modificar (Ejemplo: `http://localhost:8080/api/student/1?name=Juan`) **Solo se puede modificar este atributo**
 * **DELETE**: agregar en el path el ID del estudiante a eliminar (Ejemplo: `http://localhost:8080/api/student/1`)
-* * **POST**: ingresar informacion de un estudiante en el `body`.
+* **POST**: ingresar informacion de un estudiante en el `body`.
 
 #### JSON de estudiante
 ```
